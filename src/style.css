@@ -1,0 +1,148 @@
+html, body {
+    font-family: monospace;
+    font-size: 15px;
+    height: 100%;
+    margin: 0px;
+    color: white;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+#root {
+    min-height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 100%;
+    width: 1024px;
+}
+
+#mainContainer #intro {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(14,121,178,.5);
+    opacity: 0.8;    
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+#h1Container {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(14,121,178,.5);
+    opacity: 0.8;
+    margin: 0 15%;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+#h1Container h1{
+    margin: auto 0;
+}
+
+#logo{
+    margin: auto 7%; 
+    height: 6rem;
+}
+
+#inputForm {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(14,121,178,.5);
+    opacity: 0.8;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    text-align: center;
+}
+
+#textInput {
+    height: 80%;
+    background-color: rgba(25,25,35,.5);
+    color: white;
+    border-radius: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 0px;
+    text-align: center;
+}
+
+button, #submitButton {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+button:hover, #submitButton:hover {
+    background-color: white;
+    color: black;
+    width: 155px;
+}
+
+#responseContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(14,121,178,.5);
+    opacity: 0.8;
+    margin: 5px 20px;
+    border-radius: 5px;
+}
+
+.responses {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(25,25,35,.5);
+    border-radius: 5px;
+    margin: 10px 20px;
+}
+
+.responsesP {
+    margin: 2px 5px;
+}
+
+.promptP {
+    margin: 20px 10px;
+    margin-bottom: 0px;
+}
+
+.responseP {
+    margin: 20px 10px;
+    margin-top: 0px;
+
+}
+
+@keyframes gradient {
+
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+
+}
