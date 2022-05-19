@@ -74,7 +74,7 @@ const App = () => {
     return (
         <div id='mainContainer'>
           <div id='h1Container'>
-          <img id='logo' src={logo} />
+          <img id='logo' src={logo} alt="robot img logo"/>
             <h1>Robo Talk</h1>
           </div>
             <p id='intro'> Ask OpenAI's artificial intelligence anything! Suggestions include: Ideas for business ventures, short stories or poems, or just have a conversation with it. Have fun!</p>
